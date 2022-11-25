@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body
+    br
+    br 
+    - let arr=['https://thumbs.dreamstime.com/z/autumn-fall-nature-scene-autumnal-park-beautiful-77869343.jpg', 'https://thumbs.dreamstime.com/z/beach-112560.jpg', 'https://thumbs.dreamstime.com/z/spring-fields-allee-08787.jpg'];
+    - for(let i=0; i<3; i++)
+        img(src=`${arr[i]}`, alt="", srcset="" ).container
+        br
+        br
