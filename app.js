@@ -55,7 +55,7 @@ app.post("/postdata", (req, res) => {
       `;
   if (fs.existsSync(`./user`)) {
     fs.appendFileSync(`./user/detail.pug`, data);
-    res.render("form-submitted");
+    res.redirect("details");
   } else {
     fs.mkdirSync(`./user/`);
     fs.writeFileSync(`./user/detail.pug`, `${data.toString()}`);
